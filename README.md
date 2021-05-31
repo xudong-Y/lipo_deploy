@@ -1,1 +1,1 @@
-# lipo_deploy
+# Lipohypertrophy Classification Model Deployment
