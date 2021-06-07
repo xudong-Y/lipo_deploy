@@ -1,6 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
-altair==4.1.0
-pandas==1.2.4
 torch==1.8.1+cpu
 streamlit==0.82.0
 torchvision==0.9.1+cpu
+plotly==4.14.3
