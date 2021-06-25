@@ -1,4 +1,6 @@
 # Lipohypertrophy Model Deployment
+To see the app in action, click
+[here](https://share.streamlit.io/xudongyang2/lipo_deploy/deployment/lipo_app.py).
 
 ## About
 This is the repo for lipohypertrophy model deployment as a web application on Streamlit share. In this repo:
