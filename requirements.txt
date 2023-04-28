@@ -1,5 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
--f https://download.pytorch.org/whl/cpu/torchvision-0.11.3%2Bcpu-cp39-cp39-linux_x86_64.whl
+-f https://download.pytorch.org/whl/cpu/torchvision-0.9.1%2Bcpu-cp36-cp36m-linux_x86_64.whl
 torch==1.8.1+cpu
 opencv-python-headless==4.5.2.54
 streamlit==0.82.0
