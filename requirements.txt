@@ -1,6 +1,5 @@
 -f https://download.pytorch.org/whl/torch_stable.html
 torch==1.8.1+cpu
-torchvision==0.9.1+cpu
 opencv-python-headless==4.5.2.54
 streamlit==0.82.0
 plotly==4.14.3
