@@ -26,9 +26,9 @@ def create_model():
     cnn_model.load_state_dict(torch.load('densenet_final.pth', map_location=torch.device('cpu'))) #put the directory here where cnn_model.pt is located
     return cnn_model
 
-# @st.cache(suppress_st_warning=True)
+@st.cache(suppress_st_warning=True)
 def create_yolo_model():
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt')
+    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='local')
     return model
     
 @st.cache(suppress_st_warning=True)
