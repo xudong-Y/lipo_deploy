@@ -29,7 +29,9 @@ def create_model():
 # @st.cache(suppress_st_warning=True)
 def create_yolo_model():
 #     model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='local')
-    model = torch.hub.load('/opt/ml/model/code/', 'custom', source ='local', path='best.pt',force_reload=True)
+    model = torch.hub.load("ultralytics/yolov5", "yolov5s", pretrained=True)
+    ckpt = torch.load('best.pt')
+    model.load_state_dict(ckpt['model'].state_dict())
     return model
     
 @st.cache(suppress_st_warning=True)
