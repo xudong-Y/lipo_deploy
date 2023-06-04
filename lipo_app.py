@@ -28,7 +28,8 @@ def create_model():
 
 # @st.cache(suppress_st_warning=True)
 def create_yolo_model():
-    model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='local')
+#     model = torch.hub.load('ultralytics/yolov5', 'custom', path='best.pt', source='local')
+    model = torch.hub.load('/opt/ml/model/code/', 'custom', source ='local', path='best.pt',force_reload=True)
     return model
     
 @st.cache(suppress_st_warning=True)
